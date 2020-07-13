@@ -1,0 +1,222 @@
+.cards__item {
+    width: 50%;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    border: 1px solid #B1B3B6;
+    flex: none;
+    padding: 16px 32px 32px 24px;
+    height: 320px;
+    &__title {
+        font-size: 32px;
+        color: #333;
+        font-weight: 600;
+    }
+    &__bg {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        margin-left: -24px;
+    }
+    &__desc {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    &__info {
+        font-size: 16px;
+        color: #828282;
+        position: absolute;
+        bottom: 32px;
+        left: 24px;
+        h4 {
+            color: #333;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-top: 3px;
+        }
+    }
+    &__user {
+        position: absolute;
+        right: 32px;
+        bottom: 32px;
+    }
+    &--m_black {
+        padding: 16px 26px 0px 26px;
+        background: #273238;
+        color: #fff;
+        height: 640px;
+        border: none;
+        .cards__item {
+            &__title {
+                color: #fff;
+                font-weight: 700;
+            }
+            &__info {
+                margin-top: 80px;
+                color: #696969;
+                position: relative;
+                bottom: auto;
+                left: auto;
+                h4 {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.cards {
+    margin-top: 97px;
+    &__row {
+        display: flex;
+    }
+    &__col {
+        width: 50%;
+        .cards__item {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:1312px) {
+    .cards__item {
+        &__bg {
+            margin-left: -24px;
+            img {
+                width: 98%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:960px) {
+    .cards__item {
+        padding: 16px 32px 32px 24px;
+        height: 240px;
+        width: 100%;
+        border-top: 0px solid #fff;
+        &__title {
+            font-size: 21px;
+        }
+        &__bg {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: auto;
+            right: 0px;
+            height: 200px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: auto;
+            width: 300px;
+            img {
+                height: 200px;
+            }
+        }
+        &__desc {
+            font-size: 12px;
+            margin-top: 16px;
+        }
+        &__info {
+            font-size: 16px;
+            color: #828282;
+            position: absolute;
+            bottom: 32px;
+            left: 24px;
+            h4 {
+                color: #333;
+                text-transform: uppercase;
+                font-weight: 400;
+                margin-top: 3px;
+            }
+        }
+        &__user {
+            position: absolute;
+            right: 32px;
+            bottom: 32px;
+        }
+        &--m_black {
+            height: auto;
+        }
+    }
+    .cards {
+        margin-top: 97px;
+        &__row {
+            display: block;
+        }
+        &__col {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:720px) {
+    .cards__item {
+        &__bg {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:540px) {
+    .cards {
+        margin-top: 55px;
+        br {
+            display: none;
+        }
+    }
+    .cards__item {
+        padding: 15px;
+        height: auto;
+        padding-left: 102px;
+        padding-bottom: 48px;
+        &__bg {
+            position: relative;
+            transform: none;
+            top: auto;
+            right: auto;
+            width: 100vw;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            margin-left: -15px;
+            img {
+                height: auto;
+            }
+        }
+        &--m_black {
+            padding-bottom: 0px;
+            padding-left: 15px;
+            .cards__item {
+                &__info {
+                    margin-top: 48px;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+        &__info {
+            font-size: 12px;
+            color: #828282;
+            position: relative;
+            bottom: auto;
+            left: auto;
+            display: flex;
+            align-items: center;
+            margin-top: 14px;
+            h4 {
+                color: #333;
+                text-transform: uppercase;
+                font-weight: 400;
+                margin-top: 0px;
+                margin-left: 16px;
+            }
+        }
+        &__user {
+            top: 16px;
+            left: 8px;
+            width: 80px;
+        }
+    }
+}
